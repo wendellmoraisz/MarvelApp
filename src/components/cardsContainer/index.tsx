@@ -9,14 +9,20 @@ const CardsContainer = () => {
 
     return (
         <S.Container>
-            {characters.map(character => (
-                <Card
-                    characterName={character.name}
-                    imgSRC={character.imgURL}
-                    comics={character.comics}
-                    series={character.series}
-                />
-            ))}
+            {
+                characters.length > 0 ?
+                    <>
+                        {characters.map(character => (
+                            <Card
+                                characterName={character.name}
+                                imgSRC={character.imgURL}
+                                comics={character.comics}
+                                series={character.series}
+                            />
+                        ))}
+                    </>
+                    : <h2>No characters found</h2>
+            }
         </S.Container>
     );
 }

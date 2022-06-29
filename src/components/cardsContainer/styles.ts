@@ -11,4 +11,9 @@ justify-content: space-evenly;
 align-items: center;
 flex-wrap: wrap;
 overflow-y: scroll;
+
+    h2  {
+        background-color: transparent;
+        color: #fff;
+    }
 `;

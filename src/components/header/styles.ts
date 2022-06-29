@@ -17,11 +17,10 @@ export const Wrapper = styled.header`
 export const Input = styled.input`
     width: 400px;
     padding: 10px;
-    border-radius: 10px;
     font-size: 1.2rem;
     background: transparent;
     border: none;
-    box-shadow: 1px 1px 5px 1px #3c3c3c;
+    box-shadow: 1px 1px 12px 1px #151515;
     outline: 0;
     color: #fff;
 `;

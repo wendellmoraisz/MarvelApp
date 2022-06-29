@@ -30,4 +30,5 @@ export const CardWrapper = styled.div`
 export const CharacterName = styled.p`
     font-size: 1.3rem;
     font-weight: bold;
+    margin: 15px 0;
 `;

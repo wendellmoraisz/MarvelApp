@@ -7,6 +7,7 @@ export const Wrapper = styled.header`
 
     h1 {
         font-size: 4rem;
+        margin: 25px 0;
         background: #F0131E;
         color: #fff;
         padding: 5px;

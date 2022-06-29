@@ -7,7 +7,10 @@ const Header = () => {
 
     return (
         <S.Wrapper>
-            <h1>Marvel App</h1>
+            <S.TitleWrapper>
+                <S.MarvelTitle>Marvel</S.MarvelTitle>
+                <h1>App</h1>
+            </S.TitleWrapper>
             <S.Input
                 type="text"
                 placeholder="Search your favorite character =D"

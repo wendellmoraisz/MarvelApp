@@ -4,14 +4,22 @@ export const Wrapper = styled.header`
     display: flex;
     flex-direction: column;
     align-items: center;
+`;
 
+export const TitleWrapper = styled.div`
+    display: flex;
+    
     h1 {
         font-size: 4rem;
+        letter-spacing: 4px;
         margin: 25px 0;
-        background: #F0131E;
         color: #fff;
         padding: 5px;
     }
+`;
+
+export const MarvelTitle = styled.h1`
+    background: #F0131E;
 `;
 
 export const Input = styled.input`

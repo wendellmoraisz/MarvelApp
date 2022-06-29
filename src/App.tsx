@@ -1,5 +1,6 @@
 import React from 'react';
 import CardsContainer from './components/cardsContainer';
+import Footer from './components/footer';
 import Header from './components/header';
 
 function App() {
@@ -7,6 +8,7 @@ function App() {
     <>
     <Header/>
     <CardsContainer/>
+    <Footer/>
     </>
   );
 }

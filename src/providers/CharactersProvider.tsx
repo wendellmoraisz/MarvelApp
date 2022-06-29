@@ -1,6 +1,5 @@
 import { createContext, useCallback, useEffect, useState } from "react";
 import { CharactersContextType, Props, CharacterData } from "./types/CharactercontextTypes";
-import api from "../services/api";
 import axios from "axios";
 import md5 from "md5";
 
@@ -30,13 +29,7 @@ const CharactersProvider = ({ children }: Props) => {
             comics: character.comics.available,
             series: character.series.available
           })));
-
-        console.log(charactersState);
     }
-
-    useEffect(() => {
-        getCharacters('doctor');
-    }, []);
 
     const contextValue = {
         characters: charactersState,

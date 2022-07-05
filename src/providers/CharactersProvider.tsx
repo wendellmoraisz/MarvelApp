@@ -1,7 +1,8 @@
-import { createContext, useCallback, useEffect, useState } from "react";
+import { createContext, useCallback, useState } from "react";
 import { CharactersContextType, Props, CharacterData } from "./types/CharactercontextTypes";
 import axios from "axios";
 import md5 from "md5";
+import { PUBLIC_API_KEY, PRIVATE_API_KEY } from "./keys";
 
 export const CharactersContext = createContext<CharactersContextType>({
     characters: [{
@@ -17,7 +18,7 @@ const CharactersProvider = ({ children }: Props) => {
     const [charactersState, setCharactersState] = useState([]);
     
     const getCharacters = async (characterName: string) => {
-        const [publicKey, privateKey] = ['e2cbd746444006c4c9ad2286ee93a9ca', '974a0e2bc6b0590617452b27b2e5cf1aa40af92e'];
+        const [publicKey, privateKey] = [PUBLIC_API_KEY, PRIVATE_API_KEY];
         const time = Number(new Date());
         const hash = md5(time + privateKey + publicKey);
         const response = await axios.get(`http://gateway.marvel.com/v1/public/characters?nameStartsWith=${characterName}&ts=${time}&apikey=${publicKey}&hash=${hash}`);

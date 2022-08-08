@@ -31,4 +31,8 @@ export const Input = styled.input`
     box-shadow: 1px 1px 12px 1px #151515;
     outline: 0;
     color: #fff;
+
+    @media (max-width: 430px) {
+        width: 80vw;
+    }
 `;

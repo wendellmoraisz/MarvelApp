@@ -17,7 +17,7 @@ const CharactersProvider = ({ children }: Props) => {
     const [charactersState, setCharactersState] = useState([]);
     
     const getCharacters = async (characterName: string) => {
-        const [publicKey, privateKey] = [process.env.PUBLIC_API_KEY, process.env.PRIVATE_API_KEY as string];
+        const [publicKey, privateKey] = [process.env.REACT_APP_VERCEL_PUBLIC_API_KEY, process.env.REACT_APP_VERCEL_PRIVATE_API_KEY as string];
         const time = Number(new Date());
         const hash = md5(time + privateKey + publicKey);
         const response = await axios.get(`http://gateway.marvel.com/v1/public/characters?nameStartsWith=${characterName}&ts=${time}&apikey=${publicKey}&hash=${hash}`);

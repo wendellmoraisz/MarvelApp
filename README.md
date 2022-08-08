@@ -1,6 +1,9 @@
 # Marvel App
 
+
 Página para pesquisa de personagens da Marvel através do consumo de sua [API](https://developer.marvel.com/).
+
+Acesse o projeto em: https://marvel-app-kappa.vercel.app/
 
 # Tecnologias utilizadas
 - [TypeScript](https://www.typescriptlang.org/)
